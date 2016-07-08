@@ -553,7 +553,7 @@ int GenericClientManager::loadFromXML(){
             
             model->loadModel(meshPath);
             
-            model->setScaleNomalization(false);
+            model->setScaleNormalization(false);
             
             model->setScale(1.0f, 1.0f, 1.0f);
             
