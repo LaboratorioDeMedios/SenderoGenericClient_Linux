@@ -1,7 +1,43 @@
-![Sendero](https://lh3.googleusercontent.com/1usi6Uqss_u8rz98wNi9nxY6eC0swEH_oGddW7ATQFhSnXgHneaS1YbZTeRaY-po0Emz-KzGBHk2n_sO6ebHwABeFKhafD9KGDRDy00f7dbxIKW90tbKyMBgluXa6ylG3HaW-BJGfcjv5HZdj7k6zIQ03_exI4GoJWq1dZysytKN7YMFb5lybqkN3Ghqsax8GRJV8xrZmwHFNt0KqsA8qeAkYTwGBtQnEN4RiDY7pXC6P8kW1xedU3LgcOU7Kw0zsTNKSVTdrZXg4HXzvZXcr1dF90ILqmBxTcakss8PT348oSHhKduW_2z7X0EAddVgpcgafcGURs795l5VR8rgf-0J7oiieVygI204_P1GBXX5avvmUfCi9_qb-0LnCw7U5J5DLP0sqmEavt8af5bId6OMeFaWWnnCuF7iUHnRmErj3mPjIhI3myo5W3uS_b290mrQj2Etr5_T41Vi3702lpOGbRb2Dg3PQPKd6N15So31PX44fwVu8iC1BYZlO4XhRfG845b7MupXQfoWiWeQN0seUeN8hchcGUjcSgA16KfAwdKcrMHD60G_LFK4EqhbV5a2dNEQ8hOOSWOJvuV_4m_fqshAePs=w330-h233-no)
+![Sendero](http://sendero.uy/images/logo-white.png)
 
 # Sendero Generic Client
 
 Sendero Generic Client is a C++ project based on [OpenFrameworks](http://openframeworks.cc/) that works as a template to build client aplications for Sendero Project.
 
+Sendero Clients are the entities that generate the lighting patterns of Sendero. All the clients running send the generated patterns to Sendero Server instance for it to blend and deliver them to the ArtNet device/s and Sendero Streaming Server.
+
+This template makes easier the job of generating colour information through code.
+
+Usage
+------------
+This project is developed to be compiled in Linux (for now). However, as OpenFrameworks is a cross-platform tool, it is possible to compile it in Windows and OS X with no major difficulties.
+
+ 1. Fork this repository and clone it into your `<OF_dir>/apps/myApps/` directory.
+ 2. Develop your custom behaviour in `SpecificBehaviour.cpp`file. Some guidelines are commented inside the file.
+
+To develop a Web based interaction client (that uses RabbitMQ to receive data from [Sendero Interaction Server](https://github.com/Sendero-Project/SenderoInteractionServer)), we recommend using [SimpleAmqpClient](https://github.com/alanxz/SimpleAmqpClient) library to interact with RabbitMQ.
+
+Configuration file
+------------------
+Configurations of the project are made in `bin/data/configuration.xml`. This commented fraction summarizes the configs that can be made:
+
+```
+<?xml version="1.0" ?>
+<!-- Configuration attributes: -->
+<!-- 'address':   IP address of Sendero Client instance -->
+<!-- 'port':      TCP port used by Sendero Client instance -->
+<!-- 'fps':       times per second that the update function is called. This setting is ignored if 'useServer' is true. In this case the client will use Sendero Server's FPS -->
+<!-- 'useServer': 1 ? get 3D model from server + use server's FPS : use custom 3D model and FPS defined in 'fps' attribute.  -->
+<Configuration address="localhost" port="5002" fps="24" useServer="1">
+
+<!-- Here can be defined an optional 3D model in the same way as in Sendero Server configuration file. It will be used only if 'useServer' attribute is set to false. -->
+   .
+   .
+   .
+</Configuration>
+```
+
 --------
+
+For more information about Sendero Project go to the [base repository](https://github.com/Sendero-Project/Sendero).
+
