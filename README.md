@@ -1,0 +1,7 @@
+![Sendero](https://lh3.googleusercontent.com/1usi6Uqss_u8rz98wNi9nxY6eC0swEH_oGddW7ATQFhSnXgHneaS1YbZTeRaY-po0Emz-KzGBHk2n_sO6ebHwABeFKhafD9KGDRDy00f7dbxIKW90tbKyMBgluXa6ylG3HaW-BJGfcjv5HZdj7k6zIQ03_exI4GoJWq1dZysytKN7YMFb5lybqkN3Ghqsax8GRJV8xrZmwHFNt0KqsA8qeAkYTwGBtQnEN4RiDY7pXC6P8kW1xedU3LgcOU7Kw0zsTNKSVTdrZXg4HXzvZXcr1dF90ILqmBxTcakss8PT348oSHhKduW_2z7X0EAddVgpcgafcGURs795l5VR8rgf-0J7oiieVygI204_P1GBXX5avvmUfCi9_qb-0LnCw7U5J5DLP0sqmEavt8af5bId6OMeFaWWnnCuF7iUHnRmErj3mPjIhI3myo5W3uS_b290mrQj2Etr5_T41Vi3702lpOGbRb2Dg3PQPKd6N15So31PX44fwVu8iC1BYZlO4XhRfG845b7MupXQfoWiWeQN0seUeN8hchcGUjcSgA16KfAwdKcrMHD60G_LFK4EqhbV5a2dNEQ8hOOSWOJvuV_4m_fqshAePs=w330-h233-no)
+
+# Sendero Generic Client
+
+Sendero Generic Client is a C++ project based on [OpenFrameworks](http://openframeworks.cc/) that works as a template to build client aplications for Sendero Project.
+
+--------
