@@ -41,3 +41,7 @@ Configurations of the project are made in `bin/data/configuration.xml`. This com
 
 For more information about Sendero Project go to the [base repository](https://github.com/LaboratorioDeMedios/SenderoProject).
 
+
+
+---------
+Logo designed by flaviarampa@gmail.com & nilsonbarbara@gmail.com
