@@ -15,7 +15,7 @@ This project is developed to be compiled in Linux (for now). However, as OpenFra
  1. Fork this repository and clone it into your `<OF_dir>/apps/myApps/` directory.
  2. Develop your custom behaviour in `SpecificBehaviour.cpp`file. Some guidelines are commented inside the file.
 
-To develop a Web based interaction client (that uses RabbitMQ to receive data from [Sendero Interaction Server](https://github.com/Sendero-Project/SenderoInteractionServer)), we recommend using [SimpleAmqpClient](https://github.com/alanxz/SimpleAmqpClient) library to interact with RabbitMQ.
+To develop a Web based interaction client (that uses RabbitMQ to receive data from [Sendero Interaction Server](https://github.com/LaboratorioDeMedios/SenderoInteractionServer)), we recommend using [SimpleAmqpClient](https://github.com/alanxz/SimpleAmqpClient) library to interact with RabbitMQ.
 
 Configuration file
 ------------------
@@ -39,5 +39,5 @@ Configurations of the project are made in `bin/data/configuration.xml`. This com
 
 --------
 
-For more information about Sendero Project go to the [base repository](https://github.com/Sendero-Project/Sendero).
+For more information about Sendero Project go to the [base repository](https://github.com/LaboratorioDeMedios/SenderoProject).
 
